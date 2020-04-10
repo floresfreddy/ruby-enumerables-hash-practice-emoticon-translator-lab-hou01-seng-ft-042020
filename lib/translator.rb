@@ -19,6 +19,7 @@ def get_japanese_emoticon(emo_file, eng_emo)
   # code goes here
 hash = load_library(emo_file)
   
+  binding.pry
   emoticon = hash.keys.find do |key|
     hash[key][:english] == eng_emo
   end
